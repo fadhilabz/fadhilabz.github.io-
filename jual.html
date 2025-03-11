@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+    <script type="text/javascript">
+        window.tailwind.config = {
+            darkMode: ['class'],
+            theme: {
+                extend: {
+                    colors: {
+                        border: 'hsl(var(--border))',
+                        input: 'hsl(var(--input))',
+                        ring: 'hsl(var(--ring))',
+                        background: 'hsl(var(--background))',
+                        foreground: 'hsl(var(--foreground))',
+                        primary: {
+                            DEFAULT: 'hsl(var(--primary))',
+                            foreground: 'hsl(var(--primary-foreground))'
+                        },
+                        secondary: {
+                            DEFAULT: 'hsl(var(--secondary))',
+                            foreground: 'hsl(var(--secondary-foreground))'
+                        },
+                        destructive: {
+                            DEFAULT: 'hsl(var(--destructive))',
+                            foreground: 'hsl(var(--destructive-foreground))'
+                        },
+                        muted: {
+                            DEFAULT: 'hsl(var(--muted))',
+                            foreground: 'hsl(var(--muted-foreground))'
+                        },
+                        accent: {
+                            DEFAULT: 'hsl(var(--accent))',
+                            foreground: 'hsl(var(--accent-foreground))'
+                        },
+                        popover: {
+                            DEFAULT: 'hsl(var(--popover))',
+                            foreground: 'hsl(var(--popover-foreground))'
+                        },
+                        card: {
+                            DEFAULT: 'hsl(var(--card))',
+                            foreground: 'hsl(var(--card-foreground))'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            :root {
+                --background: 0 0% 100%;
+                --foreground: 240 10% 3.9%;
+                --card: 0 0% 100%;
+                --card-foreground: 240 10% 3.9%;
+                --popover: 0 0% 100%;
+                --popover-foreground: 240 10% 3.9%;
+                --primary: 240 5.9% 10%;
+                --primary-foreground: 0 0% 98%;
+                --secondary: 240 4.8% 95.9%;
+                --secondary-foreground: 240 5.9% 10%;
+                --muted: 240 4.8% 95.9%;
+                --muted-foreground: 240 3.8% 46.1%;
+                --accent: 240 4.8% 95.9%;
+                --accent-foreground: 240 5.9% 10%;
+                --destructive: 0 84.2% 60.2%;
+                --destructive-foreground: 0 0% 98%;
+                --border: 240 5.9% 90%;
+                --input: 240 5.9% 90%;
+                --ring: 240 5.9% 10%;
+                --radius: 0.5rem;
+            }
+            .dark {
+                --background: 240 10% 3.9%;
+                --foreground: 0 0% 98%;
+                --card: 240 10% 3.9%;
+                --card-foreground: 0 0% 98%;
+                --popover: 240 10% 3.9%;
+                --popover-foreground: 0 0% 98%;
+                --primary: 0 0% 98%;
+                --primary-foreground: 240 5.9% 10%;
+                --secondary: 240 3.7% 15.9%;
+                --secondary-foreground: 0 0% 98%;
+                --muted: 240 3.7% 15.9%;
+                --muted-foreground: 240 5% 64.9%;
+                --accent: 240 3.7% 15.9%;
+                --accent-foreground: 0 0% 98%;
+                --destructive: 0 62.8% 30.6%;
+                --destructive-foreground: 0 0% 98%;
+                --border: 240 3.7% 15.9%;
+                --input: 240 3.7% 15.9%;
+                --ring: 240 4.9% 83.9%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="p-4">
+        <div class="mb-4">
+            <h2 class="text-lg font-semibold border-b-2 border-primary">Featured</h2>
+            <h3 class="text-xl font-bold">New Arrival</h3>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- 1 -->
+            <div class="border rounded-lg p-4">
+                <img aria-hidden="true" alt="Breed Dry Dog Food" src="img/1.jpeg" />
+                <h4 class="mt-2 font-semibold">ANCSTR Kemeja Koko Polos Lengan Pendek - Uwais Linen Muslim</h4>
+                <p class="text-lg font-bold">Rp. 112.950</p>
+                <div class="button">
+                    <a href="https://vt.tokopedia.com/t/ZSMVxeX2n/" target="_blank">Beli</a>
+                </div>
+            </div>
+
+            <!-- 2 -->
+			<div class="border rounded-lg p-4">
+                <img aria-hidden="true" alt="Breed Dry Dog Food" src="img/2.jpeg" />
+                <h4 class="mt-2 font-semibold">ANCSTR Kemeja Pria Shanghai Aplikasi Motif Premium - Leafy</h4>
+                <p class="text-lg font-bold">Rp. 161.460</p>
+                <div class="button">
+                    <a href="https://vt.tokopedia.com/t/ZSMV9qsXU/" target="_blank">
+                        Beli
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="border rounded-lg p-4">
+                <img aria-hidden="true" alt="Breed Dry Dog Food" src="img/3.jpeg" />
+                <h4 class="mt-2 font-semibold">Baju Koko Pria Dewasa Motif Marvel Lengan Panjang Kurta Katun Toyobo Atasan Muslim Abu Hitam</h4>
+                <p class="text-lg font-bold">Rp. 93.000</p>
+                <div class="button">
+                    <a href="https://vt.tokopedia.com/t/ZSMV9Kmby/" target="_blank">
+                        Beli
+                    </a>
+                </div>
+            </div>
+
+            <!-- 4 -->
+			<div class="border rounded-lg p-4">
+                <img aria-hidden="true" alt="Breed Dry Dog Food" src="img/4.jpeg" />
+                <h4 class="mt-2 font-semibold">Baju Koko Motif Kautsar Lengan Pendek Pria Dewasa Kurta Batik Katun Premium Atasan Muslim Denim Kombinasi</h4>
+                <p class="text-lg font-bold">Rp.  57.760</p>
+                <div class="button">
+                    <a href="https://vt.tokopedia.com/t/ZSMV9K57k/" target="_blank">
+                        Beli
+                    </a>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="border rounded-lg p-4">
+                <img aria-hidden="true" alt="Breed Dry Dog Food" src="img/5.jpeg" />
+                <h4 class="mt-2 font-semibold">DGM Kemeja Pria Koko Navy Lengan Pendek Bordir Motif Bulang 2424</h4>
+                <p class="text-lg font-bold">Rp. 134.100</p>
+                <div class="button">
+                    <a href="https://vt.tokopedia.com/t/ZSMVx1KV5/" target="_blank">
+                        Beli
+                    </a>
+                </div>
+            </div>
+
+            <!-- 6 -->
+			<div class="border rounded-lg p-4">
+                <img aria-hidden="true" alt="Breed Dry Dog Food" src="img/6.jpeg" />
+                <h4 class="mt-2 font-semibold">DGM Baju Koko Pria Lengan Panjang Bordir Premium Purple Motif Bordir Baju Koko 011 F</h4>
+                <p class="text-lg font-bold">Rp. 143.100</p>
+                <div class="button">
+                    <a href="https://vt.tokopedia.com/t/ZSMV933x5/" target="_blank">
+                        Beli
+                    </a>
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="border rounded-lg p-4">
+                <img aria-hidden="true" alt="Breed Dry Dog Food" src="img/7.jpeg" />
+                <h4 class="mt-2 font-semibold">S&D Project Baju Muslim Koko Pria Dewasa Kain Polikatun Motif Bordir Timbul Lengan Pendek Nyaman S M L XL XXL 3XL 4XL - Seri 50 Putih Tulang</h4>
+                <p class="text-lg font-bold">Rp. 115.000</p>
+                <div class="button">
+                    <a href="https://vt.tokopedia.com/t/ZSMV9q8w8/" target="_blank">
+                        Beli
+                    </a>
+                </div>
+            </div>
+
+            <!-- 8 -->
+			<div class="border rounded-lg p-4">
+                <img aria-hidden="true" alt="Breed Dry Dog Food" src="img/8.jpeg" />
+                <h4 class="mt-2 font-semibold">S&D Project Baju Muslim Pria Koko Kareem Lengan Pendek Bahan Katun Madinah Ukuran M L XL - Warna Bole</h4>
+                <p class="text-lg font-bold">Rp. 119.600</p>
+                <div class="button">
+                    <a href="https://vt.tokopedia.com/t/ZSMV9cvCu/" target="_blank">
+                        Beli
+                    </a>
+                </div>
+            </div>
+
+            <!-- 9 -->
+                        <div class="border rounded-lg p-4">
+                <img aria-hidden="true" alt="Breed Dry Dog Food" src="img/9.jpeg" />
+                <h4 class="mt-2 font-semibold">Kurta Pakistan Four One Model Slimfit Zipper Pria Remaja Dewasa Lengan 3/4 - Premium Brand Original - Koko, Muslim</h4>
+                <p class="text-lg font-bold">Rp. 161.000</p>
+                <div class="button">
+                    <a href="https://vt.tokopedia.com/t/ZSMV9ceBq/" target="_blank">
+                        Beli
+                    </a>
+                </div>
+            </div>
+
+            <!-- 10 -->
+			<div class="border rounded-lg p-4">
+                <img aria-hidden="true" alt="Breed Dry Dog Food" src="img/10.jpeg" />
+                <h4 class="mt-2 font-semibold">Kemeja Koko Muslim Lengan Panjang untuk Pria - Baju Dewasa Atasan Kurta Putih</h4>
+                <p class="text-lg font-bold">Rp. 143.520</p>
+                <div class="button">
+                    <a href="https://vt.tokopedia.com/t/ZSMVxeG2f/" target="_blank">
+                        Beli
+                    </a>
+                </div>
+            </div>
+            
+            <!-- 11 -->
+            <div class="border rounded-lg p-4">
+                <img aria-hidden="true" alt="Breed Dry Dog Food" src="img/11.jpeg" />
+                <h4 class="mt-2 font-semibold">Baju koko kurta Pakistan selimfit embos premium baju muslim pria  Dewasa lengan  Panjang Toyobo</h4>
+                <p class="text-lg font-bold">Rp. 173.000</p>
+                <div class="button">
+                    <a href="https://vt.tokopedia.com/t/ZSMVx15bT/" target="_blank">
+                        Beli
+                    </a>
+                </div>
+            </div>
+
+            <!-- 12 -->
+			<div class="border rounded-lg p-4">
+                <img aria-hidden="true" alt="Breed Dry Dog Food" src="img/12.jpeg" />
+                <h4 class="mt-2 font-semibold">Baju Koko Pria Model Lengan panjang Kurta Dewasa Pakistan Original Progress Man Toyobo Putih Muslim</h4>
+                <p class="text-lg font-bold">Rp. 187.000</p>
+                <div class="button">
+                    <a href="https://vt.tokopedia.com/t/ZSMV9sqJB/" target="_blank">
+                        Beli
+                    </a>
+                </div>
+            </div>
+
+            <!-- 13 -->
+            <div class="border rounded-lg p-4">
+                <img aria-hidden="true" alt="Breed Dry Dog Food" src="img/13.jpeg" />
+                <h4 class="mt-2 font-semibold">Baju Koko Pria Polos Bordir lengan pendek kerah sanghai Original Ukuran M L XL XXL Muslim Dewasa Kurta Katun</h4>
+                <p class="text-lg font-bold">Rp. 85.900</p>
+                <div class="button">
+                    <a href="https://vt.tokopedia.com/t/ZSMV9vuwa/" target="_blank">
+                        Beli
+                    </a>
+                </div>
+            </div>
+
+            <!-- 14 -->
+			<div class="border rounded-lg p-4">
+                <img aria-hidden="true" alt="Breed Dry Dog Food" src="img/14.jpeg" />
+                <h4 class="mt-2 font-semibold">Baju Koko Pria Polos Benzema lengan pendek kerah sanghai Original Ukuran M L XL XXL Muslim Dewasa Kurta Katun</h4>
+                <p class="text-lg font-bold">Rp. 85.900</p>
+                <div class="button">
+                    <a href="https://vt.tokopedia.com/t/ZSMV9CkBL/" target="_blank">
+                        Beli
+                    </a>
+                </div>
+
+            </div>
+            
+
+        </div>
+    </div>
+</body>
+</html>
